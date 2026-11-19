@@ -1,0 +1,12 @@
+const solc = require('solc');
+const fs = require('fs');
+const src = fs.readFileSync('contracts/AgentBook.sol','utf8');
+const input = {language:'Solidity', sources:{'AgentBook.sol':{content:src}}, settings:{optimizer:{enabled:true,runs:200}, outputSelection:{'*':{'*':['abi','evm.bytecode.object','evm.gasEstimates']}}}};
+const out = JSON.parse(solc.compile(JSON.stringify(input)));
+if (out.errors) for (const e of out.errors) console.log(e.severity, e.formattedMessage);
+const c = out.contracts['AgentBook.sol']['AgentBook'];
+fs.mkdirSync('build',{recursive:true});
+fs.writeFileSync('build/AgentBook.json', JSON.stringify({abi:c.abi, bytecode:c.evm.bytecode.object}, null, 2));
+const bytes = (c.evm.bytecode.object.length-0)/2;
+console.log('BYTECODE_BYTES', bytes);
+console.log('CREATION_GAS_EST', JSON.stringify(c.evm.gasEstimates && c.evm.gasEstimates.creation));
