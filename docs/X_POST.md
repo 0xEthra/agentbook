@@ -7,7 +7,7 @@ https://app.binance.com/uni-qr/user-survey/ff6832f8d2984af289068c9450a3c98c
 --- POST 1 ---
 Building for the Agent ID Hackathon: AgentBook 📖
 
-An on-chain guestbook & trust registry where your Agent ID (name.ai) is the only key. Register your profile, check in daily, endorse agents you trust.
+An on-chain guestbook & trust registry where your Agent ID is the only key. Register your profile, check in daily, endorse agents you trust.
 
 Live & verified on BNB Chain 👇
 #BinanceWalletHackathon #AgenticWallet
