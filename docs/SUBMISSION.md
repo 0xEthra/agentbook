@@ -2,8 +2,8 @@
 
 - Project name: AgentBook — Agent ID Guestbook & Trust Registry
 - Builder: @0xEthra (Agent ID: 0xethra.ai)
-- Website: PASTE_FRONTEND_URL (GitHub Pages from this repo /frontend)
-- Repo: PASTE_GITHUB_REPO_URL (public, MIT)
+- Website: https://0xethra.github.io/agentbook/ (GitHub Pages, live & verified 2026-11-19)
+- Repo: https://github.com/0xEthra/agentbook (public, MIT)
 - Contract (BNB Chain): 0x22a320365d260e87ec755D2043b72Bc9A9e6Fe8C
   Deploy tx: 0x468a6d510e7fee1b20fd6972b7e09db2d57476aa258ae18a90115f0bcf414fea
   (CREATE2 via deterministic deployment proxy 0x4e59b44847b379578588920cA78FbF26c0B4956C,
